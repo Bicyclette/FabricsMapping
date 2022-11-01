@@ -26,7 +26,7 @@ cmake -B build -S .
 
 <img alt="step1" src="imgs/step1.jpg"/>
 
-### step 2 : Create a shape that encloses the area on we want 
+### step 2 : Create a shape that encloses the area we want to map
 
 <img alt="step2" src="imgs/step2.jpg"/>
 
