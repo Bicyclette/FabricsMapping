@@ -24,32 +24,32 @@ cmake -B build -S .
 
 ### step 1 : Open an image
 
-<img alt="step1" src="imgs/step1.jpg"/>
+<img alt="step1" src="imgs/step1.png"/>
 
 ### step 2 : Create a shape that encloses the area we want to map
 
-<img alt="step2" src="imgs/step2.jpg"/>
+<img alt="step2" src="imgs/step2.png"/>
 
-### step 3 : Hit enter to create a mask
+### step 3 : Hit enter to create a mask and charge a grid
 
-<img alt="step3" src="imgs/step3.jpg"/>
+<img alt="step3" src="imgs/step3.png"/>
 
-### step 4 : Create a grid and move its control points around an object
+### step 4 : Move the grid control points around an object
 
-<img alt="step4" src="imgs/step4.jpg"/>
+<img alt="step4" src="imgs/step4.png"/>
 
 ### step 5 : Generate a bezier surface from the grid
 
-<img alt="step5" src="imgs/step5.jpg"/>
+<img alt="step5" src="imgs/step5.png"/>
 
-### step 6 : Open a pattern
+### step 6 : Open some patterns
 
-<img alt="step6" src="imgs/step6.jpg"/>
+<img alt="step6" src="imgs/step6.png"/>
 
 ### step 7 : Map the pattern on the bezier surface
 
-<img alt="step7" src="imgs/step7.jpg"/>
+<img alt="step7" src="imgs/step7.png"/>
 
 ### step 8 : Hide the bezier surface and the grid from the view
 
-<img alt="step8" src="imgs/step8.jpg"/>
+<img alt="step8" src="imgs/step8.png"/>
