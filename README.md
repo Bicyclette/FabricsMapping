@@ -29,7 +29,7 @@ cmake -B build -S .
 ### step 2 : Create a shape that encloses an object and hit enter to generate a mask
 
 <img alt="step2" src="imgs/step2.png"/>
-<br/>
+
 ### step 3 : Open some patterns
 
 <img alt="step3" src="imgs/step3.png"/>
