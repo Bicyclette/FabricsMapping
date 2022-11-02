@@ -545,6 +545,8 @@ void Window::mapMotifToGrid()
                 double nbMotifsPerChunkDim = static_cast<double>(nbRepeat) / static_cast<double>(grid_dim - 1); // nombre de motifs à placer sur une dimension (x ou y) d'un chunk de la grille
                 QRgb motifColor;
                 QRgb photoColor;
+				float L;
+				float rgb[3];
                 QRgb color;
 
                 for(int pos = 0; pos < diffP; pos++)
@@ -559,7 +561,11 @@ void Window::mapMotifToGrid()
 
                     motifColor = img_motif.pixel(Xmotif, Ymotif);
                     photoColor = imgData.pixel(Xphoto, Yphoto);
-                    color = qRgb( (qRed(motifColor) + qRed(photoColor)) / 2, (qGreen(motifColor) + qGreen(photoColor)) / 2, (qBlue(motifColor) + qBlue(photoColor)) / 2);
+                    L = QColor(photoColor).lightnessF();
+					rgb[0] = static_cast<float>(qRed(motifColor)) * L;
+					rgb[1] = static_cast<float>(qGreen(motifColor)) * L;
+					rgb[2] = static_cast<float>(qBlue(motifColor)) * L;
+					color = QColor(static_cast<int>(rgb[0]), static_cast<int>(rgb[1]), static_cast<int>(rgb[2])).rgb();
                     if(masque_courant != nullptr)
                     {
                         QColor masque_color = masque_courant->pixelColor(Xphoto, Yphoto);
